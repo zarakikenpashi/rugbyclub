@@ -1,0 +1,126 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+@font-face {
+    font-family: "Southland";
+    src: url(../fonts/Southland.ttf);
+}
+
+:root{
+    --font-estetique: "Southland";
+    --font-default: 'Inter';
+    --font-heading: 'Barlow Semi Condensed';
+    --primary-color: #F5E70E;
+    --secondary-color: #AEB4C7;
+    --thrid-color:#412807;
+}
+
+body{
+    font-family: var(--font-default);
+    font-weight: 400;
+}
+
+.topbar{
+    padding: .5rem 1.5rem;
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 10;
+}
+
+.topbar-container{
+    display: flex;
+    align-items: center;
+}
+.topbar-container ul{
+    margin-left: auto;
+}
+
+.topbar-container ul{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+
+.topbar a{
+    font-size: .8rem;
+    color: var(--thrid-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.topbar a:hover{
+    border-bottom: .5px solid var(--thrid-color);
+}
+
+.hero{
+    height: 100dvh;
+    background-color: black;
+    position: relative;
+}
+.navbar{
+   padding: .5rem 1.5rem; 
+   position: relative;
+    z-index: 10;
+}
+.navbar a{
+    color: white;
+    text-transform: uppercase;
+}
+.navbar .container{
+    display: flex;
+}
+.navbar .right-nav,.navbar .left-nav{
+    display: flex;
+    gap: 2rem;
+    height: 50px;
+    align-items: center;
+}
+
+.navbar .right-nav{
+    margin-left: auto;
+}
+
+
+
+#logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#logo img{
+    object-fit: cover;
+    height: 95px;
+    width: 100px;
+}
+.hero-video-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.hero-video-shadow{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0; 
+    z-index: 2;
+    background-color: #171717;
+    opacity: 0.45;
+}
+.hero-video{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
