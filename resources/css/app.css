@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
-
 @font-face {
     font-family: "Southland";
     src: url(../fonts/Southland.ttf);
@@ -17,10 +15,14 @@
     --secondary-color: #AEB4C7;
     --thrid-color:#412807;
 }
-
+html,body{
+    width: 100%;
+}
 body{
     font-family: var(--font-default);
     font-weight: 400;
+    color: var(--thrid-color);
+    background-color: #F3F3F3;
 }
 
 .topbar{
@@ -123,4 +125,79 @@ body{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.footer{
+    margin-block-start: 9rem;
+    position: relative;
+}
+
+.footer__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer_logo{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.footer_logo img{
+    position: relative;
+    z-index: 2;
+}
+.footer_logo::before{
+    content: "";
+    background-color: rgba(78, 71, 63, .25);
+    width: calc(50% - 200px);
+    height: 1px;
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    z-index: 1;
+}
+
+.footer_logo::after{
+    content: "";
+    background-color: rgba(78, 71, 63, .25);
+    width: calc(50% - 200px);
+    height: 1px;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    z-index: 1;
+}
+
+
+.footer_nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.footer_nav a{
+    font-size: clamp(1rem, 4.6vw - 1rem, 1.113rem);
+}
+
+.footer_legal{
+    border-top: 1px solid rgba(78, 71, 63, .25);
+    
+}
+.footer_legal ul{
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;
+}
+.footer_legal a{
+    color: rgba(78, 71, 63, .5);
+    font-size: .75rem;
+    border-bottom: 1px solid #F3F3F3;
+    padding-block: 1rem;
+}
+
+.footer_legal a:hover{
+    border-bottom: 1px solid rgba(78, 71, 63, .1);
 }
