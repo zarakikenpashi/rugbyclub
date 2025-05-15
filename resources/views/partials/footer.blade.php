@@ -10,6 +10,7 @@
                 <a href="">Partenaires</a>
                 <a href="">Agenda</a>
                 <a href="">Actaulités</a>
+                <a href="">Gallerie photos</a>
                 <a href="">Contacts</a>
             </ul>
         </div>
